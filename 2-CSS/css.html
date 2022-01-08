@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Website with STYLE</title>
+        
+        <style type="text/css">
+            .bold {
+
+                font-family:'Courier New', Courier, monospace;
+                font-weight: bold;
+                text-align: right;
+            }
+
+            .underlined{
+                font-style:italic;
+            }
+
+            .red{
+
+                color:red;
+                font-size:200%
+
+            }
+            
+            .large{
+                font-size:200%
+            }
+
+            h1{
+                color:pink;
+            }
+
+            #red{
+
+                color:red;
+                font-size:50%
+            }
+
+            .underlined{
+                text-decoration: underline;
+                font-size:300%;
+                color: aqua;
+            }
+
+            #first-section{
+
+                color:blue;
+                background-color:pink;
+                width: 50%; 
+                position: fixed; /*use absolute when it has to be on 
+                top of everything; use fixed for fixed menu on the top regardless 
+                of scrolls; use sticky if you want the object to stick to the top 
+                of the margin also could work for menu; static is the default value*/
+                margin: 100px 50px 20px 10px;
+                top: 100px;
+                z-index: 1;
+                opacity: 0.8;
+            }
+
+            #second-section{
+                color:bisque;
+                background-color: #229954 ;
+                width: 200px;
+                position: relative;
+                left: 100px;
+                top: 1px;
+                z-index: 0;
+                margin: 50px, 20px, 50px, 20px;
+                padding: 5px, 10px, 15px, 20px;
+                box-sizing: border-box
+            }
+
+            body{
+
+                margin: 0;
+                padding: 0;
+            }
+
+            .clear-float{
+                clear:both;
+            }
+
+            #squares-red{
+                background-color: red;
+                border: 1px black solid
+            }
+
+            #squares-blue{
+                background-color: blue;
+                border: 3px yellow dashed
+            }
+
+            #squares-green{
+                background-color: green;
+                border-style: ridge solid dotted dashed;
+                border-color: pink red purple orange;
+                border-width: 10px 5px 5px 1px;
+                border-radius: 50%;
+            }
+
+            .square{
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+
+            a{
+                text-decoration: none;
+
+            }
+
+
+            a:hover{
+                text-decoration: underline;
+                color: greenyellow;
+                font-style: none;
+                
+            }
+            
+            a:visited{
+                color: turquoise
+            }
+
+            #align{
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="align">
+
+                <p>This is center aligned text</p>
+
+        </div>
+
+        <p class ="bold"> This is some new text</p>
+
+        <p class = "underlined"> This is underlined <span class= "bold">text</span></p>
+
+        <a href="">This is a link but not underlined</a>
+
+        <div id="first-section">
+
+            <p> this sentence is affected by div</p>
+ 
+            <p> this sentence too</p> 
+
+        </div>
+
+        <div id="second-section">
+
+            <p> this is affected by 2nd div</p>
+
+            <p> same here</p>
+
+        </div>
+
+        <div class="clear-float">
+
+            <p class="red large"> this sentence is affected by the internal CSS 
+                Class red and large in the head section.</p>
+            
+        </div>
+        
+        <p style="color: rgb(40, 114, 89); font-size: 200%;">this sentence is affected by inline CSS</p>
+
+        <p class="large"> see? this paragraph is affected too</p>
+
+        <p id="red"> this is affected by <span class="underlined">id Red</span> not class red</p>
+        
+        <h1> h1 header</h1>
+
+        <div id="squares-red" class="square"> </div>
+        
+        <div id="squares-blue" class="square"> </div>
+        
+        <div id="squares-green" class="square"> </div>
+
+        <a href="https://google.com" target="_blank">Google.com</a>
+    </body>
+
+</html>
