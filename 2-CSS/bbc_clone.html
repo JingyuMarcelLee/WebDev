@@ -1,0 +1,174 @@
+<html<!DOCTYPE html>
+    <head>
+        <title>BBC Clone</title>
+
+        <style type="text/css">
+
+            #top_bar {
+
+                width: 1500px;
+                margin: 0 auto;
+                height: 40px;
+                background-color: black;
+                color: white;
+               
+                
+            }
+
+            body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            #logo{
+                margin-top: 8px;
+                width: 83px;
+                height: 24px;
+                float: left;
+                margin-right: 5px;
+                margin-left: 15px;
+            }
+
+            #signin-logo{
+                margin-top: 6px;
+                margin-left: 12px;
+                height: 27px;
+                float: left;
+            }
+
+            .top-section{
+                float: left;
+                border-left: 1px grey solid;
+                margin-left: 3px;
+                height: 100%;
+            }
+
+
+            #signin-text{
+                font-weight: bold;
+                font-size: 80%;
+                position: relative;
+                top:13px;
+                padding-right: 80px
+            }
+
+            #categories-text{
+                font-weight: bold;
+                font-size: 80%
+            }
+
+            .topbar-menu {
+                font-weight: bold;
+                margin-left: 5px;
+                margin-right: -4px;
+                padding: 13px 12px 0 12px;
+                height: 27px;
+            }
+
+            .topbar-search {
+                font-weight: bold;
+                margin-top: -5px;
+                margin-left: 5px;
+                margin-right: -4px;
+                padding: 5px 12px 0 12px;
+                height: 40px;
+            }
+
+            #downarrow{
+                margin-top: -2px;
+                margin-left: 55px;
+                height: 20px;
+                float: right;
+            }
+
+            #search-box {
+                background-color: white;
+                border: None;
+                font-weight: bold;
+                color: grey;
+                padding: 3px;
+                margin: 9px -5px 0 0
+            }
+
+            #mag-glass{
+                height: 22px;
+                position:relative;
+                top: 7px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="top_bar">
+            
+            <img id="logo" src="images/BBC-Logo-1.png">
+            
+            <div id="signin-div" class="top-section">
+                
+                <img id="signin-logo" src="images/login.PNG">
+                
+                <span id="signin-text">Sign in</span>
+
+            </div>
+
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">News</span>
+
+            </div>
+
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">Sport</span>
+
+            </div>
+
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">Reel</span>
+
+            </div>
+
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">Worklife</span>
+
+            </div>
+
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">Travel</span>
+
+            </div>
+            
+            <div class="top-section topbar-menu">
+
+                <span id="categories-text">Future</span>
+
+            </div>
+
+            <div class="top-section topbar-menu more">
+
+                <span id="categories-text">More</span>
+
+                <img src="images/downarrow.PNG" id="downarrow">
+
+            </div>
+
+            <div class="top-section topbar-search">
+
+                <input id ="search-box" type="text" value="Search">
+
+                <input type="image" id="mag-glass" src="images/search.PNG">
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
