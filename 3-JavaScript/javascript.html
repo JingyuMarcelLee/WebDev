@@ -14,6 +14,12 @@
 
         <p id="some">This is some text</p>
 
+        <p><input type="text" id="magicword"></p>
+
+        <p><button id="checkMagicWord">Enter</button></p>
+
+        <div id="tweetDiv"></div>
+
         <script type="text/javascript">
             
             document.getElementById("button").onclick = function() {
@@ -21,22 +27,58 @@
                 var textEntered = "";
 
                 textEntered = document.getElementById("text").value;
-
                 document.getElementById("some").innerHTML = textEntered;
+            }
+
+            //function onclick
+
+            document.getElementById("checkMagicWord").onclick = function() {
+
+                var wordEntered = document.getElementById("magicword").value;
+
+                var magicWord = "abracadabra";
+
+                if (wordEntered == magicWord) {
+
+                    alert('you got it!');
+
+                } else {
+
+                    alert("you are wrong");
+
+                }
 
             }
 
+            //array
+            
             var myArray = new Array();
 
             myArray[0] = "pizza";
 
             myArray[1] = "chocolate";
 
-            var tweets = ["sup", "fuck"];
+            var tweets = ["sup", "af"];
 
             tweets.splice(1, 1, "wow");
 
             console.log(tweets)
+
+            var x = 1;
+
+            //loop
+
+            var tweets = ["hi", "need help!", "IDC"];
+
+            var tweetString = "";
+
+            for (var i = 0; i < tweets.length; i++) {
+                tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+            }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+
+
         </script>
 
     </body>
